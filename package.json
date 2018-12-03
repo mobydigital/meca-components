@@ -1,6 +1,6 @@
 {
   "name": "@mobylab/web-components",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A set of web components",
   "author": "Mobydigital <contact@mobydigital.com> (https://www.mobydigital.com/)",
   "module": "dist/esm/index.js",
