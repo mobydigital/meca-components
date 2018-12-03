@@ -12,58 +12,46 @@ import '@stencil/core';
 
 export namespace Components {
 
-  interface MyComponent {
+  interface MobyButton {
+    'classes': string;
+    'loader': boolean;
     /**
-    * The first name
+    * Props
     */
-    'first': string;
-    /**
-    * The last name
-    */
-    'last': string;
-    /**
-    * The middle name
-    */
-    'middle': string;
+    'title': string;
   }
-  interface MyComponentAttributes extends StencilHTMLAttributes {
+  interface MobyButtonAttributes extends StencilHTMLAttributes {
+    'classes'?: string;
+    'loader'?: boolean;
     /**
-    * The first name
+    * Props
     */
-    'first'?: string;
-    /**
-    * The last name
-    */
-    'last'?: string;
-    /**
-    * The middle name
-    */
-    'middle'?: string;
+    'title'?: string;
   }
 }
 
 declare global {
   interface StencilElementInterfaces {
-    'MyComponent': Components.MyComponent;
+    'MobyButton': Components.MobyButton;
   }
 
   interface StencilIntrinsicElements {
-    'my-component': Components.MyComponentAttributes;
+    'moby-button': Components.MobyButtonAttributes;
   }
 
 
-  interface HTMLMyComponentElement extends Components.MyComponent, HTMLStencilElement {}
-  var HTMLMyComponentElement: {
-    prototype: HTMLMyComponentElement;
-    new (): HTMLMyComponentElement;
+  interface HTMLMobyButtonElement extends Components.MobyButton, HTMLStencilElement {}
+  var HTMLMobyButtonElement: {
+    prototype: HTMLMobyButtonElement;
+    new (): HTMLMobyButtonElement;
   };
 
   interface HTMLElementTagNameMap {
-    'my-component': HTMLMyComponentElement
+    'moby-button': HTMLMobyButtonElement
   }
 
   interface ElementTagNameMap {
-    'my-component': HTMLMyComponentElement;
+    'moby-button': HTMLMobyButtonElement;
   }
 
 

@@ -20,7 +20,8 @@
   "dependencies": {},
   "devDependencies": {
     "@stencil/core": "~0.15.2",
-    "@stencil/sass": "0.0.5"
+    "@stencil/sass": "0.0.5",
+    "@types/node": "^10.12.12"
   },
   "license": "MIT",
   "homepage": "https://github.com/mobydigital/meca-components"
