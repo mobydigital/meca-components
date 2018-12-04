@@ -4,6 +4,7 @@ import { Component, Prop } from '@stencil/core';
 @Component({
     tag: 'moby-button',
     styleUrl: 'button.component.scss',
+    shadow: true
 })
 
 export class Button {
